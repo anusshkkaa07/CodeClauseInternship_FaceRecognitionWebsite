@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReconFace</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="design.css">
+
+    <script src="faceapi.js" defer></script>
+    <script src="code.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="head">
+        <h1>ReconFace</h1>
+        <!-- <img id="head-image" src="Touchless Face Recognition Attendance System _ Rydot Infotech.jpg"> -->
+        
+    </div>
+
+    <div class="body">
+        <h3>What are you upto today?</h3><br>
+        <button id="mood_lens_button" onclick="moodLens()"><a href="#moodLens">MoodLens</a><p id="mood_tag">Recognising Faces, focusing on moods. &#10153;</p></button>
+        <button id="face_tag_button" onclick="crewRecogniser()"><a href="#faceTag">CrewRecogniser</a><p id="face_tag">Cognizing Characters, Capturing Crews. &#10153;</p></button>
+    </div>
+    
+
+    <div id="moodLens" class="moodLens">
+        <div class="moodLensHeading">
+            <h2>MoodLens</h2>
+            <h4>Let's detect your mood!</h4>
+        </div>
+        <video id="video" width="600" height="500" autoplay> </video>
+    </div>
+    
+    <div id="faceTag" class="faceTag">
+        <div class="faceTagHeading">
+            <h2>Crew Recogniser</h2>
+            <h4>Upload an image to detect faces!</h4>
+        </div>
+        <input type="file" id="inputImage">
+        
+    </div>
+    
+</body>
+</html>
